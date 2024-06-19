@@ -5,7 +5,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/Relation").then((res) => {
   console.log("Connected");
 });
 
-// one to few Relation
 // Parent Schema
 const schema = new Schema({
   username: {
