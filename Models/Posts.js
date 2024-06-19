@@ -5,7 +5,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/Relation").then((res) => {
   console.log("Connected");
 });
 
-// one to few Relation
 // Parent Schema
 const Userschema = new Schema({
   username: {
@@ -38,7 +37,7 @@ const Post = mongoose.model("Post", PostSchema);
 // addUser();
 let addPost = async () => {
   let Post1 = new Post({
-    content: "Trip",
+    content: "Trips",
     likes: 50,
   });
 
